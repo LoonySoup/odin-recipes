@@ -1,0 +1,16 @@
+* {
+    color: green;
+    background-color: black;
+    font-family: sans-serif;
+}
+.t,
+h1, h2, h3, h4, h5, h6 {
+    font-family: Verdana;
+    color: greenyellow;
+}
+.e, li {
+    color: red;
+}
+.link {
+    color: aqua;
+}
