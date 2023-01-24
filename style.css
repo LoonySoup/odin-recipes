@@ -3,14 +3,38 @@
     background-color: black;
     font-family: sans-serif;
 }
-.t,
+.recipe-list {
+    position: relative;
+    color: greenyellow;
+    font-size: large;
+    font: bold;
+    font-family: initial;
+    left: 20px;
+}
 h1, h2, h3, h4, h5, h6 {
     font-family: Verdana;
     color: greenyellow;
 }
 .e, li {
-    color: red;
+    color: purple;
 }
 .link {
     color: aqua;
+}
+.img {
+    width: 344;
+    height: auto;
+}
+p {
+    border: green solid 1px;
+    padding: 10px
+}
+button {
+    position: relative;
+    margin: 20px
+}
+#feijoada {
+    position: absolute;
+    top: 210px;
+    left: 128px;
 }
