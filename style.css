@@ -1,40 +1,100 @@
 * {
-    color: green;
-    background-color: black;
-    font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+	font-size: 1rem;
 }
-.recipe-list {
-    position: relative;
-    color: greenyellow;
-    font-size: large;
-    font: bold;
-    font-family: initial;
-    left: 20px;
+
+body {
+	font-family: sans-serif;
+	font-weight: 100;
+	display: flex;
+	justify-content: center;align-content: center;
+	align-self: center;
+	align-items: center;
 }
-h1, h2, h3, h4, h5, h6 {
-    font-family: Verdana;
-    color: greenyellow;
+
+.main {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	max-width: 768px;
+	min-width: 768px;
 }
-.e, li {
-    color: purple;
+
+.recipe-list input {
+	width: 100%;
+	max-width: 50%;
 }
-.link {
-    color: aqua;
+
+img {
+	width: 100%;
+	max-width: fit-content;
+	align-self: center;
 }
-.img {
-    width: 344;
-    height: auto;
-}
+
 p {
-    border: green solid 1px;
-    padding: 10px
+	padding: 8px;
 }
-button {
-    position: relative;
-    margin: 20px
+
+ul {
+	list-style:disc;
+	padding: 16px;
 }
-#feijoada {
-    position: absolute;
-    top: 210px;
-    left: 128px;
+
+li {
+	position: relative;
+	font-size: .9rem;
+}
+
+h1,h2,h3 {
+	margin: 8px;
+	font-weight: 500;
+	font-size: 1.5rem;
+}
+
+h1,h2 {
+	font-size: 2rem;
+	font-family: times;
+}
+
+h3 {
+	font-size: 1.2rem;
+}
+
+.content {
+	align-self: center;
+	width: fit-content;
+	text-align: left;
+	background-color: rgb(167, 201, 174);
+	margin: 16px;
+	border-radius: 24px;
+	padding: 1rem;
+}
+.gohome {
+	margin: 16px;
+	align-self: center;
+	padding: 12px;
+	width: fit-content;
+	background-color: rgb(167, 201, 174);
+	border-radius: 100px;
+}
+
+.gohome img {
+	width: 32px;
+}
+
+.other {
+	background-color: rgb(172, 251, 255);
+	margin-top: 64px;
+	padding: 0;
+} 
+
+.obs {
+	color: gray;
+}
+
+@media (max-width: 768px) {
+	.main {
+		min-width: 0;
+	}
 }
