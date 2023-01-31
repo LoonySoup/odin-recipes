@@ -2,10 +2,16 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	text-align: center;
 	font-family: sans;
 	font-weight: 100;
 	margin: 0;
+}
+
+#main {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 img {
@@ -21,29 +27,95 @@ p, ul {
 	margin: 0;
 }
 
-.content-text, #content-text-original-site, #go-home-button {
-	margin: 1rem;
+.content-text, #go-home-button {
 	background-color: aquamarine;
 	padding: 0.5rem;
-	border-radius: 16px;
+	border-radius: 1rem;
 	width: fit-content;
 }
 
 .content-text {
 	text-align: left;
+	margin: 1rem;
 }
 
 #go-home-button {
-	width: 35px;
+	width: 1rem;
+	height: 1rem;
 	border: 0;
 	color: black;
+	transition: 0.2s;
 }
 
 #go-home-button svg {
 	color: black;
 }
 
+#go-home-button:hover {
+	background: black;
+	scale: 1.1;
+	transition: 0.2s;
+}
+
+#go-home-button:hover svg {
+	color: white;
+	transition: 0.2s;
+	scale: 1.1;
+}
+
+/*#go-home-button-button {
+	position: absolute;
+	width: 2rem;
+	height: 2rem;
+	background: transparent;
+	border-radius: 2rem;
+	border: 0;
+}*/
+
 .observation {
 	font-size: 0.9rem;
-	color: gray;
+	opacity: 50%;
+}
+
+#go-home-text {
+	margin: 1rem;
+	text-decoration: none;
+	color: black;
+	transition: 0.2s;
+}
+
+#go-home-text:hover {
+	opacity: 100%;
+	transition: 0.2s;
+}
+
+#go-home-button:hover + #go-home-text {
+	opacity: 100%;
+	transition: 0.2s;
+}
+
+#content-original-site {
+	margin: 1rem;
+	margin-top: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+	
+	#main {
+		max-width: 768px;
+	}
+
+	#go-home-button {
+		scale: 0;
+		padding: 0;
+		margin: 0;
+	}
+
+	#go-home-text {
+		font-size: 1rem;
+		border: black solid 0.1rem;
+		border-radius: 2rem;
+		padding: 0.5rem;
+	}
+
 }
