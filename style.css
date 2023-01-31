@@ -1,3 +1,49 @@
-.content-text {
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	font-family: sans;
+	font-weight: 100;
+	margin: 0;
+}
+
+img {
+	width: 100%;
+}
+
+h1,h2 {
+	font-family: 'Times New Roman', Times, serif;
+	margin: 1rem;
+}
+
+p, ul {
+	margin: 0;
+}
+
+.content-text, #content-text-original-site, #go-home-button {
+	margin: 1rem;
 	background-color: aquamarine;
+	padding: 0.5rem;
+	border-radius: 16px;
+	width: fit-content;
+}
+
+.content-text {
+	text-align: left;
+}
+
+#go-home-button {
+	width: 35px;
+	border: 0;
+	color: black;
+}
+
+#go-home-button svg {
+	color: black;
+}
+
+.observation {
+	font-size: 0.9rem;
+	color: gray;
 }
